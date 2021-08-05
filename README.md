@@ -4,4 +4,4 @@ Algoritmo para controle de velocidade de motores elétricos de corrente contínu
 
 O algoritmo utiliza modulação por largura de pulso (pwm) para variar a tensão média (e a potência) entregue à carga, com base na entrada recebida pela porta serial. Caso, por exemplo, seja necessária uma velocidade igual à metade da velocidade nominal do motor, a porta P2.0 emitirá um sinal de onda quadrada com 50% do período em nível lógico alto e 50% em nível lógico baixo. Dessa forma, a potência média entregue ao motor será aproximadamente a metade de sua potência nominal e a velocidade angular de seu eixo também será a metade da nominal.
 
-São usados os dois temporizadores do 8051, e a frequência deve estar fixa em 11.049 kHz.
+São usados os dois temporizadores do 8051, e a frequência do clock deve estar fixa em 11.0592MHz, com o uso de um cristal oscilador nas portas XTAL.
